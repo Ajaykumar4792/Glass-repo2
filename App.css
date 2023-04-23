@@ -1,0 +1,75 @@
+body {
+    background-image: url('./components/images/hulk.jpg');
+}
+
+.nav {
+    border: 2px solid transparent;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 1em greenyellow;
+}
+
+.nav a {
+    color: yellowgreen !important;
+    padding: 10px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline black;
+    transition: 0.2s;
+}
+
+.grid {
+    display: grid;
+    color: yellowgreen;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    /* border-radius: 10px;
+    box-shadow: 0 5px 5px yellowgreen; */
+}
+
+.inner-grid {
+    transition: linear 0.2s;
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 1em yellowgreen, 0 5px 1em black;
+}
+
+.inner-grid:hover {
+    transform: scale(1.1);
+    transition: linear 0.2s;
+    box-shadow: 0 5px 1em black;
+    backdrop-filter: blur(5px);
+}
+
+#inner-grid1:nth-child(1) {
+    grid-row: span 3;
+    text-align: center;
+    transition: linear 0.2s;
+}
+
+#inner-grid1:hover {
+    transform: scale(1.1);
+    transition: linear 0.2s;
+}
+
+#inner-grid2:nth-child(2) {
+    grid-row: span 2;
+}
+
+#inner-grid4:nth-child(4) {
+    grid-row: span 2;
+    grid-column: span 2;
+}
